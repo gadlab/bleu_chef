@@ -1,0 +1,21 @@
+/* DESCRIPTION */
+    Bleu Chef is a social network base on cooking people's interests and exchanges. 
+    It allows everyone to find someone to cook for them or to offer their services as a talented cook.
+    It works like the concept of car sharing, replacing the notion of a car with that of a stove.
+    Some people love cooking, other love eating. Can we find a match?...
+
+/* TEAM */
+	Lead DEV: Pierre-Yves Gadina
+	Contact: gadlab@ik.me
+	Twitter: gadlab
+	Location: Lausanne, Switzerland.
+
+/* THANKS */
+	Name: Philippe Oheler, Full Stack DEV
+
+
+/* SITE */
+	Last update: 2021/12/06
+	Standards: HTML5, CSS3
+	Components: React, Bootstrap
+	Software: VS Code, Adobe Creative Suite
