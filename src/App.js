@@ -1,79 +1,14 @@
-import logo from './images/bleu-chef-logo.svg';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
+import { PageBody, ResponsiveAppBar } from './ui';
 
-function HeaderLogo() {
+export default function DisplayApp() {
   return (
-    <div className="App-header-logo">
-      <img 
-        src={logo} 
-        className="App-logo" 
-        alt="logo" 
-      />
-    </div>
-  )
-}
-function HeaderTitle() {
-  const title ="Get someone to cook for you!"
-  return (
-    <div className="App-header-title">
-      {title}
-    </div>
-  )
-}
-function HeaderMenu() {
-  return (
-    <div className="App-header-menu">
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        MENU
-      </a>
-    </div>
-  )
-}
-function MainHeader() {
-  return (
-      <header className="App-header">
-        <>
-          <HeaderLogo />
-          <HeaderTitle />
-          <HeaderMenu />
-        </>
-      </header>
-  )
-}
-function MainBody() {
-  return (
-    <section className="App-body">
-      <div>
-        Page Body
-      </div>
-    </section>
-  )
-}
-function MainFooter() {
-  return (
-    <footer className="App-footer">
-      <div>
-        Page Footer
-      </div>
-    </footer>
-  )
-}
-
-function DisplayApp() {
-  return (
-    <section className="App">
-      <>
-        <MainHeader />
-        <MainBody />
-        <MainFooter />
-      </>
-    </section>
+    <>
+      <CssBaseline />
+      <ResponsiveAppBar />
+      <PageBody />
+    </>
   );
 }
-
-export default DisplayApp;

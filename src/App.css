@@ -1,12 +1,11 @@
 .App {
   min-height: 100vh;
 }
-
 .App-logo {
-  max-height: 5vh;
+  width:75%;
 }
-
 .App-header {
+  position: fixed;
   background-color: #282c34;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -14,23 +13,31 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   color: white;
-  height: 5vh;
+  min-height: 5vh;
   text-align: center;
+  align-items: center;
+  width: 100vw;
 }
-.App-header div { padding: 1%; }
+.App-header div { padding: 3%; }
 .App-header-logo { grid-area: 1 / 1 / 2 / 2; }
 .App-header-title { grid-area: 1 / 2 / 2 / 5; }
 .App-header-menu { grid-area: 1 / 5 / 2 / 6; }
-
+.App-header-title h1 {  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  white-space: nowrap;
+}
 .App-link { color: #00ffdd; }
 
 .App-body { 
   background-color: #f9f9f9; 
-  height: 90vh;
 }
-.App-footer { 
+.App-footer {
   background-color: #282c34;
   color: white;
   height: 5vh; 
   text-align: center;
+  width: 100vw;
+  padding: 1vh 0 0;
 }

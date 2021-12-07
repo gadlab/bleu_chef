@@ -9,7 +9,6 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -19,8 +18,10 @@ import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import BClogo from './images/bleu-chef-logo.svg';
+import BCFavicon from './images/icone-toque-150x150.png';
 
 import './ui.css';
+import { getDividerUtilityClass } from '@mui/material';
 
 const theme = createTheme({
     palette: {
@@ -176,9 +177,11 @@ export function PageBody() {
                         alignItems: 'center',
                     }}
                 >
-                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                        <LockOutlinedIcon />
-                    </Avatar>
+                    <img
+                        src={BCFavicon}
+                        alt="BC Logo"
+                        className="bc-favicon"
+                    />
                     <Typography component="h1" variant="h5">
                         Connexion
                     </Typography>
