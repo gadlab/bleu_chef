@@ -41,3 +41,14 @@
   width: 100vw;
   padding: 1vh 0 0;
 }
+
+/* CUSTOM HACK */ 
+.bc-logo {
+    width: 10vw;
+}
+.bc-favicon {
+    width: 72px;
+}
+.footer-text {
+    font-size: small;
+}
