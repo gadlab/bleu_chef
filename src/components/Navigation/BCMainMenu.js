@@ -12,10 +12,13 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
+import BCLogo from '../../assets/logos/bleu-chef-logo.svg';
+import './BCMainMenu.css';
+
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-const MainNavBar = () => {
+const BCMainMenu = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -36,17 +39,12 @@ const MainNavBar = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="xl">
+            <Container maxWidth="false">
                 <Toolbar disableGutters>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                    >
-                        LOGO
-                    </Typography>
-
+                    <img src={BCLogo}
+                        alt="Bleu Chef"
+                        className='logo-nav'
+                    />
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -137,4 +135,4 @@ const MainNavBar = () => {
         </AppBar>
     );
 };
-export default MainNavBar;
+export default BCMainMenu;

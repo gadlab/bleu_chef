@@ -1,7 +1,5 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -9,23 +7,23 @@ import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
+
+import Favicon from '../assets/icons/icone-toque-150x150.png'
 
 function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
+            <Link color="inherit" href="https://bleu-chef.com/" title="Social Food Network">
+                Bleu Chef
             </Link>{' '}
             {new Date().getFullYear()}
-            {'.'}
         </Typography>
     );
 }
 
-export default function SignInSide() {
+export default function BCSignIn() {
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
@@ -38,7 +36,6 @@ export default function SignInSide() {
 
     return (
             <Grid container component="main" sx={{ height: '100vh' }}>
-                <CssBaseline />
                 <Grid
                     item
                     xs={false}
@@ -63,9 +60,11 @@ export default function SignInSide() {
                             alignItems: 'center',
                         }}
                     >
-                        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                            <LockOutlinedIcon />
-                        </Avatar>
+                        <img 
+                            src={Favicon}
+                            alt="BC Symbol"
+                            width="64"
+                        />
                         <Typography component="h1" variant="h5">
                             Sign in
                         </Typography>

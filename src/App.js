@@ -2,9 +2,9 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import MainNavBar from './components/MainNavBar';
-import SignInSide from './components/SignInSide';
-import StickyFooter from './components/StickyFooter';
+import BCMainMenu from './components/Navigation/BCMainMenu';
+import BCSignIn from './components/BCSignIn';
+import BCFooter from './components/BCFooter';
 
 import './App.css';
 
@@ -30,14 +30,13 @@ const PageBody = () => {
       <>
         <CssBaseline />
         <ThemeProvider theme={BCtheme}>
-          <Container component="main" maxWidth="xs">
-            <MainNavBar />
-            <SignInSide />
-            <StickyFooter />
+          <Container component="main" maxWidth="false">
+            <BCMainMenu />
+            <BCSignIn />
+            <BCFooter />
           </Container>
         </ThemeProvider>
       </>
     )
 }
-
 export default PageBody

@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Bleu Chef · Social Food Network
+
+Bleu Chwef is a social Network based on sharing food pleaseur
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
