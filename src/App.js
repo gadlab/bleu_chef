@@ -30,11 +30,11 @@ const PageBody = () => {
       <>
         <CssBaseline />
         <ThemeProvider theme={BCtheme}>
-          <Container component="main" maxWidth="false">
-            <BCMainMenu />
+          <BCMainMenu />
+          <Container component="main" maxWidth="lg">
             <BCSignIn />
-            <BCFooter />
           </Container>
+          <BCFooter />
         </ThemeProvider>
       </>
     )

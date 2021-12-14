@@ -39,7 +39,7 @@ const BCMainMenu = () => {
 
     return (
         <AppBar position="static">
-            <Container maxWidth="false">
+            <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <img src={BCLogo}
                         alt="Bleu Chef"
