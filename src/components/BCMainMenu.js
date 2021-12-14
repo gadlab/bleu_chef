@@ -1,22 +1,23 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
+import {
+    AppBar, 
+    Avatar, 
+    Box, 
+    Button, 
+    Container, 
+    IconButton, 
+    Menu, 
+    MenuItem, 
+    Toolbar, 
+    Tooltip, 
+    Typography
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-
-import BCLogo from '../../assets/logos/bleu-chef-logo.svg';
+import BCLogo from '../assets/logos/bleu-chef-logo-white.svg';
 import './BCMainMenu.css';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const mainMenuItems = ['Activity', 'Groups', 'Events', 'Members'];
+const settingsMenu = ['Dashboard', 'My Profile', 'Account Settings', 'Logout'];
 
 const BCMainMenu = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -41,10 +42,12 @@ const BCMainMenu = () => {
         <AppBar position="static">
             <Container maxWidth="lg">
                 <Toolbar disableGutters>
-                    <img src={BCLogo}
-                        alt="Bleu Chef"
-                        className='logo-nav'
-                    />
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <img src={BCLogo}
+                            alt="Bleu Chef"
+                            className='logo-nav-big'
+                        />
+                    </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -74,7 +77,7 @@ const BCMainMenu = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
+                            {mainMenuItems.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
@@ -87,10 +90,13 @@ const BCMainMenu = () => {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
                     >
-                        LOGO
+                        <img src={BCLogo}
+                            alt="Bleu Chef"
+                            className='logo-nav-small'
+                        />
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
+                        {mainMenuItems.map((page) => (
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
@@ -123,7 +129,7 @@ const BCMainMenu = () => {
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
-                            {settings.map((setting) => (
+                            {settingsMenu.map((setting) => (
                                 <MenuItem key={setting} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">{setting}</Typography>
                                 </MenuItem>

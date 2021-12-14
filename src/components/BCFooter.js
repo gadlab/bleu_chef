@@ -1,8 +1,6 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
+import { Box, Container, Grid, Link, Typography } from '@mui/material';
+import BCLogo from '../assets/logos/bleu-chef-logo-grey60.svg';
 
 const Copyright = () => {
     return (
@@ -20,9 +18,9 @@ const Copyright = () => {
 
 const MenuSeparator = () => {
     return (
-        <>
+        <span>
             {' '}&middot;{' '}
-        </>
+        </span>
     )
 }
 
@@ -41,141 +39,151 @@ export default function BCFooter() {
             }}
         >
             <Container maxWidth="lg">
-                <Typography variant="body1">
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to Deutsch version");
-                        }}
-                    >
-                            Deutsch
-                    </Link>
-                    <MenuSeparator />
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to English version");
-                        }}
-                    >
-                        English
-                    </Link>
-                    <MenuSeparator />
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to Español version");
-                        }}
-                    >
-                        Español
-                    </Link>
-                    <MenuSeparator /> 
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to English version");
-                        }}
-                    >
-                        Français
-                    </Link>
-                    <MenuSeparator /> 
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to Italiano version");
-                        }}
-                    >
-                        Italiano
-                    </Link>
-                    <MenuSeparator /> 
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to Português version");
-                        }}
-                    >
-                        Português
-                    </Link> 
-                </Typography>
-                <Typography variant="body1">
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to SignUp Page");
-                        }}
-                    >
-                        SignUp
-                    </Link>
-                    <MenuSeparator />
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to SignIn Page");
-                        }}
-                    >
-                        SignIn
-                    </Link>
-                    <MenuSeparator />
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Open Messenger");
-                        }}
-                    >
-                        Messenger
-                    </Link>
-                    <MenuSeparator /> 
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to General Terms Page");
-                        }}
-                    >
-                        General terms
-                    </Link>
-                    <MenuSeparator /> 
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to Help page");
-                        }}
-                    >
-                        Help
-                    </Link>
-                    <MenuSeparator />
-                    <Link 
-                        component="button"
-                        underline="hover"
-                        variant="body2"
-                        onClick={() => {
-                            console.info("Go to Settings Page");
-                        }}
-                    >
-                        Settings
-                    </Link> 
-                </Typography>
-                <Copyright />
+                <Grid container spacing={1}>
+                    <Grid item xs={12} sm={4} md={7}>
+                        <Typography variant="body1">
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to Deutsch version");
+                                }}
+                            >
+                                    Deutsch
+                            </Link>
+                            <MenuSeparator />
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to English version");
+                                }}
+                            >
+                                English
+                            </Link>
+                            <MenuSeparator />
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to Español version");
+                                }}
+                            >
+                                Español
+                            </Link>
+                            <MenuSeparator /> 
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to English version");
+                                }}
+                            >
+                                Français
+                            </Link>
+                            <MenuSeparator /> 
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to Italiano version");
+                                }}
+                            >
+                                Italiano
+                            </Link>
+                            <MenuSeparator /> 
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to Português version");
+                                }}
+                            >
+                                Português
+                            </Link> 
+                        </Typography>
+                        <Typography variant="body1">
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to SignUp Page");
+                                }}
+                            >
+                                SignUp
+                            </Link>
+                            <MenuSeparator />
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to SignIn Page");
+                                }}
+                            >
+                                SignIn
+                            </Link>
+                            <MenuSeparator />
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Open Messenger");
+                                }}
+                            >
+                                Messenger
+                            </Link>
+                            <MenuSeparator /> 
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to General Terms Page");
+                                }}
+                            >
+                                General terms
+                            </Link>
+                            <MenuSeparator /> 
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to Help page");
+                                }}
+                            >
+                                Help
+                            </Link>
+                            <MenuSeparator />
+                            <Link 
+                                component="button"
+                                underline="hover"
+                                variant="body2"
+                                onClick={() => {
+                                    console.info("Go to Settings Page");
+                                }}
+                            >
+                                Settings
+                            </Link> 
+                        </Typography>
+                        <Copyright />
+                    </Grid>
+                    <Grid item xs={12} sm={8} md={5}>
+                        <img src={BCLogo}
+                        alt="Bleu Chef"
+                        className='logo-footer'
+                    />
+                    </Grid>
+                </Grid>
             </Container>
         </Box>
     );
