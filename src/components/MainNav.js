@@ -1,25 +1,16 @@
 import * as React from 'react';
-import {
-    AppBar, 
-    Avatar, 
-    Box, 
-    Button, 
-    Container, 
-    IconButton, 
-    Menu, 
-    MenuItem, 
-    Toolbar, 
-    Tooltip, 
-    Typography
-} from '@mui/material';
+// IMPORT NODE_MODULES
+import { AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+// IMPORT GRAPHICAL ASSETS
 import BCLogo from '../assets/logos/bleu-chef-logo-white.svg';
-import './BCMainMenu.css';
+//IMPORT CSS
+import './MainNav.css';
 
 const mainMenuItems = ['Activity', 'Groups', 'Events', 'Members'];
 const settingsMenu = ['Dashboard', 'My Profile', 'Account Settings', 'Logout'];
 
-const BCMainMenu = () => {
+const MainNav = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -141,4 +132,4 @@ const BCMainMenu = () => {
         </AppBar>
     );
 };
-export default BCMainMenu;
+export default MainNav;

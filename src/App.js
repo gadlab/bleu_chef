@@ -1,15 +1,16 @@
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import BCMainMenu from './components/BCMainMenu';
-import BCSignIn from './components/BCSignIn';
-import BCFooter from './components/BCFooter';
-
+import * as React from 'react'
+// IMPORT NODES_MODULES
+import { CssBaseline, Container } from '@mui/material/'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+// IMPORT COMPONENTS
+import MainNav from './components/MainNav'
+import SignIn from './components/SignIn'
+import Footer from './components/Footer'
+// IMPORT CSS
 import './App.css';
 
 const BCtheme = createTheme({
-    palette: {
+  palette: {
         primary: {
             light: '#0d47a1',
             main: '#5472d3',
@@ -30,11 +31,11 @@ const PageBody = () => {
       <>
         <CssBaseline />
         <ThemeProvider theme={BCtheme}>
-          <BCMainMenu />
+          <MainNav />
           <Container component="main" maxWidth="lg">
-            <BCSignIn />
+            <SignIn />
           </Container>
-          <BCFooter />
+          <Footer />
         </ThemeProvider>
       </>
     )
