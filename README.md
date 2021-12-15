@@ -1,6 +1,6 @@
 # Bleu Chef · Social Food Network
 
-Bleu Chwef is a social Network based on sharing food pleaseur
+Bleu Chef is a Social Network based on Sharing Food Pleasures.
 
 ## Getting Started with Create React App
 
